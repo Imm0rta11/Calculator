@@ -53,6 +53,8 @@ def equels():
             ui.label.setText(str(A))
     except ValueError:
         ui.label.setText('Error')
+    except ZeroDivisionError:
+        ui.label.setText('Error')
 
 
 ui.number_10.clicked.connect(lambda: add_digit('0'))
